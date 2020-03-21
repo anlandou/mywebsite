@@ -1,0 +1,123 @@
+body::-webkit-scrollbar{
+   display:none;
+}
+body{
+    scrollbar-width: none;
+}
+img{
+    display: block;
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+#header p{
+    
+    border-right: .2em solid coral;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    font-size: 100px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#header p:nth-child(1){
+    width: 100%;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type 2s steps(40, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes type{
+    0%{
+        width: 0%;
+    }
+    1% {
+        opacity: 1;
+    }
+   
+    100%{
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes type {
+    0% {
+      width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
+@-webkit-keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
+#box1, #box2,#box3{
+   border: 5px black solid;
+   margin: 5px;
+   padding: 10px;
+   float: left;
+}
+
+#popup1, #popup2, #popup3{
+    position: relative;
+    top: -80px;
+    right: 100px;
+    display: none;
+    height: 85px;
+    width: 200px;
+    float: right;
+    padding:90px;
+    margin-left: 10%;
+    z-index: 1;
+}
+
+.sentence1, .sentence2, .sentence3, .sentence4{
+   position: relative;
+   text-align: center;
+   margin: 10px;
+   top: -80px;
+   font-family: 'Courier New', Courier, monospace;
+}
+ 
+#close{
+    background: transparent;
+    position: relative;
+    right: -218px;
+    top: -95px;
+    font-size: 20px;
+    z-index: 5;
+    border: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    border: dotted coral;
+
+} 
+
+#close:hover{
+    opacity:0.20;
+    -webkit-opacity:0.20;
+    -moz-opacity:0.20;
+    filter: alpha(opacity=20);
+
+}
+
+.s1, .s2, .s3{
+    color: coral;
+}
