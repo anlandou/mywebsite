@@ -9,6 +9,9 @@ function aboutme() {
 
 function projects() {
     popup2.style.display = "block"
+    if(dailylogs() == true){
+        popup3.style.display = "none";
+    }
 }
 
 function dailylogs() {

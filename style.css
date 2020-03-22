@@ -89,7 +89,7 @@ img{
     z-index: 1;
 }
 
-.sentence1, .sentence2, .sentence3, .sentence4{
+.sentence1, .sentence2, .sentence3, .sentence4, .sentence5{
    position: relative;
    text-align: center;
    margin: 10px;
