@@ -1,14 +1,18 @@
 let popup1 = document.getElementById("popup1");
 let popup2 = document.getElementById("popup2");
 let popup3 = document.getElementById("popup3");
-let body = document.getElementsById("body");
 
+var log = document.createElement("p"); 
+var text = document.createTextNode("On Wednesday, March 24th, 2020 I created my first JavaScript app"); 
+popup3.appendChild(log);
+log.appendChild(text); 
+log.className = "log"; 
+  
 function aboutme() {
     closeAll(); 
     popup1.style.display = "block";
     
 }
-
 
 function projects() {
     closeAll(); 
@@ -30,8 +34,6 @@ function close2() {
  function close3() {
     popup3.style.display = "none";
 }
-
-//close click on outside 
 
 function closeAll(){
     popup1.style.display = "none";
